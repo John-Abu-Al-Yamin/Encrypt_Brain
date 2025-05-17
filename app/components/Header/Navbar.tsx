@@ -131,25 +131,25 @@ const Navbar = () => {
               >
                 <ul className="flex items-center justify-center gap-x-4 w-full h-full text-black">
                   <li
-                    id="about"
+                    id="#about"
                     className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
                   >
                     About
                   </li>
                   <li
-                    id="service"
+                    id="#services"
                     className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
                   >
                     Service
                   </li>
                   <li
-                    id="partners"
+                    id="#partners"
                     className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
                   >
                     Partners
                   </li>
                   <li
-                    id="projects"
+                    id="#projects"
                     className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
                   >
                     Projects
