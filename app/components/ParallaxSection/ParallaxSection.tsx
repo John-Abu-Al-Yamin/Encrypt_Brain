@@ -1,7 +1,5 @@
-"use client";
-import { motion } from "framer-motion";
+
 import ParallaxText from "./ParallaxText";
-import Image from "next/image";
 
 export default function ParallaxSection() {
   return (
