@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { PhoneCall, MessageCircle, Mail, Linkedin } from "lucide-react";
+import { PhoneCall, Mail, Linkedin } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useScrollDirection } from "@/app/hook/useScrollDirection";
 
