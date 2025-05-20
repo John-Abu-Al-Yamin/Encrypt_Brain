@@ -69,7 +69,7 @@ const cardVariants: Variants = {
   hover: {
     scale: 1.05,
     y: -10,
-    boxShadow: "0px 15px 25px rgba(0, 255, 255, 0.5)",
+    boxShadow: "0px 15px 25px rgba(0, 185, 255, 0.8)",
     transition: { type: "spring", stiffness: 300, damping: 15 },
   },
   tap: {
@@ -79,7 +79,7 @@ const cardVariants: Variants = {
 
 const Cards: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6">
+    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-6 p-2 lg:p-6">
       {cardData.map(({ id, title, description, icon: Icon }) => (
         <motion.div
           key={id}
@@ -92,13 +92,13 @@ const Cards: React.FC = () => {
           viewport={{ once: false, amount: 0.4 }}
           className="relative bg-gray-700 text-white rounded-xl p-4 cursor-pointer select-none"
         >
-          <div className="flex items-center gap-3">
-            <Icon size={24} className="text-cyan-400" />
-            <h3 className="text-sm font-medium lg:font-semibold lg:text-lg">
+          <div className="flex flex-col items-center justify-center gap-1 lg:gap-2">
+            <Icon  className="text-cyan-400 w-6 h-6 lg:w-10 lg:h-10" />
+            <h3 className="text-sm font-medium lg:font-semibold lg:text-lg text-center">
               {title}
             </h3>
           </div>
-          <div className="relative max-h-[6rem] overflow-y-auto scrollbar-none mt-2">
+          <div className="relative max-h-[6rem] overflow-y-auto scrollbar-none mt-1 lg:mt-2">
             <p className="text-sm text-zinc-400 leading-relaxed">
               {description}
             </p>

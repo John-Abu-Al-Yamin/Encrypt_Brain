@@ -59,7 +59,7 @@ const Navbar = () => {
           transition={{ delay: 0.3, duration: 0.5 }}
         >
           <motion.div
-            className="w-72 h-12 dark:bg-white bg-gray-300 rounded-full px-4 relative flex items-center"
+            className="w-72 h-12 dark:bg-white bg-gray-100 shadow-md rounded-full px-4 relative flex items-center"
             whileHover={{ scale: 1.02 }}
           >
             <ul className="flex items-center justify-center gap-x-4 w-full h-full text-black">

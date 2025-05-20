@@ -48,7 +48,6 @@ const About = () => {
       viewport={{ once: false }}
       transition={{ duration: 0.8 }}
     >
-     
       <HeaderSection
         companey="Hallow to Encrypt Brain"
         title="Who Are We?"
@@ -67,7 +66,7 @@ const About = () => {
         viewport={{ once: false }}
       >
         <motion.div
-          className="h-32 dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover="hover"
@@ -91,8 +90,8 @@ const About = () => {
           </div>
         </motion.div>
 
- <motion.div
-          className="h-32 dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+        <motion.div
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover="hover"
@@ -116,7 +115,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="h-32 dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover="hover"
@@ -138,9 +137,9 @@ const About = () => {
             </p>
           </div>{" "}
         </motion.div>
-       
+
         <motion.div
-          className="h-32 dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover="hover"
@@ -164,7 +163,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="h-32 dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover="hover"
@@ -187,6 +186,7 @@ const About = () => {
             </p>
           </div>{" "}
         </motion.div>
+
       </motion.div>
     </motion.div>
   );

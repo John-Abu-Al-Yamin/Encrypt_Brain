@@ -17,10 +17,10 @@ export default function HandsAnimation() {
   }, []);
 
   const leftInitial = isMobile ? -100 : -500;
-  const leftTarget = isMobile ? -10 : -200;
+  const leftTarget = isMobile ? -10 : -280;
 
   const rightInitial = isMobile ? 100 : 500;
-  const rightTarget = isMobile ? 10 : 200;
+  const rightTarget = isMobile ? 10 : 280;
 
   const topPosition = isMobile ? "top-1/4" : "top-1/3"; // رفع للأيدين فوق شوية
 
