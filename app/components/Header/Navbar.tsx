@@ -47,7 +47,6 @@ const Navbar = () => {
                 className=" object-cover "
               />
             </motion.div>
-           
           </div>
 
           {/* Toggle button visible on all screens */}
@@ -106,7 +105,7 @@ const Navbar = () => {
 
         {/* Mobile menu button - only visible on smaller screens */}
         <motion.button
-          className="block sm:hidden"
+          className="block cursor-pointer sm:hidden "
           whileTap={{ scale: 0.95 }}
           onClick={toggleMobileMenu}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
@@ -127,7 +126,7 @@ const Navbar = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="sm:hidden bg-white shadow-md overflow-hidden"
+            className="sm:hidden bg-transparent  overflow-hidden"
           >
             <div className="px-4 py-6 flex flex-col gap-6">
               <motion.div
@@ -135,29 +134,40 @@ const Navbar = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <ul className="flex items-center justify-center gap-x-4 w-full h-full text-black">
-                  <li
-                    id="#about"
-                    className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
-                  >
-                    About
+                  <li className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                    <a
+                      href="#about"
+                      className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                    <a
+                      href="#services"
+                      className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200"
+                    >
+                      Services
+                    </a>
                   </li>
                   <li
-                    id="#services"
+                    id=""
                     className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
                   >
-                    Service
+                    <a
+                      href="#partners"
+                      className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200"
+                    >
+                      Partners
+                    </a>
                   </li>
-                  <li
-                    id="#partners"
-                    className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
-                  >
-                    Partners
-                  </li>
-                  <li
-                    id="#projects"
-                    className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
-                  >
-                    Projects
+                  <li className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                    <a
+                      href="#projects"
+                      className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200"
+                    >
+                      Projects
+                    </a>
                   </li>
                 </ul>
               </motion.div>

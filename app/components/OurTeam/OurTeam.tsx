@@ -13,7 +13,7 @@ const OurTeam = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}
         >
-          Hallow to Encrypt Brain
+          Hello to Encrypt Brain
         </motion.p>
 
         <motion.h1

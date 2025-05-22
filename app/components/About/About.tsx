@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { Atom, Brain, CreativeCommons, Maximize, Timer } from "lucide-react";
 import HeaderSection from "../HeaderSection";
-import Image from "next/image";
 
 const containerVariants = {
   hidden: {},
@@ -50,7 +49,7 @@ const About = () => {
       transition={{ duration: 0.8 }}
     >
       <HeaderSection
-        companey="Hallow to Encrypt Brain"
+        companey="Hello to Encrypt Brain"
         title="Who Are We?"
         description="
           Encrypt Brain  is a tech startup founded in January 2025 and
