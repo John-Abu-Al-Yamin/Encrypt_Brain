@@ -2,15 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  Phone,
-  Globe,
-  LocateIcon,
-} from "lucide-react";
+import { Linkedin, Mail, Phone, Globe, LocateIcon } from "lucide-react";
 
 const container = {
   hidden: { opacity: 0 },
@@ -54,7 +46,7 @@ export default function Footer() {
               className="text-xl font-bold mb-4"
               whileHover={{ scale: 1.05 }}
             >
-              Encrypt Brain 
+              Encrypt Brain
             </motion.h3>
             <motion.p className=" text-gray-400 mb-4 ">
               Creating amazing digital experiences with cutting-edge technology.
@@ -66,9 +58,12 @@ export default function Footer() {
               animate={isInView ? "show" : "hidden"}
             >
               {[
-                { icon: Facebook, href: "#" },
-                { icon: Instagram, href: "#" },
-                { icon: Linkedin, href: "#" },
+                { icon: Mail, href: " mailto:it@encryptbrain.com" },
+
+                {
+                  icon: Linkedin,
+                  href: " https://www.linkedin.com/company/encryptbrain/",
+                },
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -211,7 +206,7 @@ export default function Footer() {
                     className="hover:text-white cursor-pointer"
                     href={"https://api.whatsapp.com/send?phone=201044950655"}
                   >
-                    +201097706996 {" "}
+                    +201097706996{" "}
                   </a>
                   <a
                     href={"https://api.whatsapp.com/send?phone=201044950655"}

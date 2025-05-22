@@ -4,6 +4,7 @@ import HeaderSection from "../HeaderSection";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Clock } from "lucide-react";
 
 const OurProjects = () => {
   return (
@@ -19,7 +20,13 @@ const OurProjects = () => {
 
       <div className="w-full grid grid-cols-1 ">
         {/* Project Card */}
-        <div className="overflow-hidden rounded-xl shadow-md bg-white dark:bg-zinc-900 transition hover:shadow-xl">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.8 }}
+          className="overflow-hidden rounded-xl shadow-md bg-white dark:bg-zinc-900 transition hover:shadow-xl"
+        >
           <div className="relative h-56 w-full">
             <Image
               src="/image/EncryptBrain/Pretty/pretty logo.png"
@@ -37,7 +44,10 @@ const OurProjects = () => {
                 Pretty
               </h3>
               <Link href="/projects/pertty">
-                <Button className="cursor-pointer text-sm">Live Demo</Button>
+                <Button className="cursor-pointer text-sm px-4 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                  <Clock size={16} />
+                  Coming Soon
+                </Button>
               </Link>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
@@ -46,7 +56,7 @@ const OurProjects = () => {
               stunning results.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

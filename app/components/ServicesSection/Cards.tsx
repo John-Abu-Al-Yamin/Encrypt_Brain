@@ -104,7 +104,7 @@ const Cards: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           whileHover="hover"
-          whileTap="tap"
+          whileTap="hover" 
           viewport={{ once: false, amount: 0.4 }}
           className="relative bg-gray-700 text-white rounded-xl p-4 cursor-pointer select-none"
         >

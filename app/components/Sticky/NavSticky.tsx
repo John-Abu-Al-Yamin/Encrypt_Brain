@@ -45,7 +45,7 @@ const NavSticky = () => {
       label: "Email",
     },
     {
-      href: "https://www.linkedin.com/in/john-abou-al-yamin-0425a02aa/",
+      href: " https://www.linkedin.com/company/encryptbrain/",
       icon: <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />,
       label: "LinkedIn",
     },

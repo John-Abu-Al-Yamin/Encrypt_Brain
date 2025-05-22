@@ -19,28 +19,6 @@ const SectionVideo = () => {
     }
   }, [isInView]);
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
-
-  const videoVariants = {
-    hidden: { scale: 0.8, opacity: 0, y: 50 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1.2,
-        ease: "easeOut",
-      },
-    },
-  };
 
   const cardsVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -59,8 +37,6 @@ const SectionVideo = () => {
       ref={sectionRef}
       className="relative w-screen h-screen overflow-hidden"
       initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      variants={containerVariants}
     >
       {/* Video as background */}
       <motion.video
@@ -69,7 +45,6 @@ const SectionVideo = () => {
         autoPlay
         muted
         onEnded={() => setShowCards(true)}
-        variants={videoVariants}
       >
         <source src="/image/VD/1.mp4" type="video/mp4" />
       </motion.video>
