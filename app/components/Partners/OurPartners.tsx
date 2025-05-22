@@ -12,8 +12,8 @@ const OurPartners = () => {
     },
     {
       id: 2,
-      name: "I’Supply",
-      logo: "/image/supply-chain-solutions.svg",
+      name: "Pretty",
+      logo: "/image/EncryptBrain/Pretty/pretty logo.png",
     },
   ];
 
@@ -41,9 +41,9 @@ const OurPartners = () => {
             <Image
               src={partner.logo}
               alt="placeholder"
-              width={100}
-              height={100}
-              className="bg-transparent rounded-3xl"
+              width={120}
+              height={120}
+              className="bg-transparent rounded-3xl object-cover"
             />
             <p
               className="text-2xl lg:text-5xl font-bold italic mt-4 dark:text-white text-black"

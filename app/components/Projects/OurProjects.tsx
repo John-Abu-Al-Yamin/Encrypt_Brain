@@ -1,92 +1,52 @@
 "use client";
 import { motion } from "framer-motion";
 import HeaderSection from "../HeaderSection";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 const OurProjects = () => {
   return (
     <motion.div
       id="projects"
-      className="py-4 lg:py-10 px-2 lg:px-20 "
+      className="py-8 px-4 lg:py-16 lg:px-20"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
       transition={{ duration: 0.8 }}
     >
-      <HeaderSection companey="Encrypt Brain " title="Our Projects" />
-      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-2">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.8 }}
-          className=" bg-black text-white p-2 rounded-lg w-full max-w-lg font-mono"
-        >
-          <div className="flex justify-between items-center">
-            <div className="flex space-x-2 text-red-500">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
-            </div>
-            <p className="text-sm cursor-pointer">Link</p>
-          </div>
-          <div className="mt-4">
-            <p className="text-green-400">$ npm install Haki</p>
-            <p className="text-white">+ Haki</p>
-            <p className="text-white">
-              added 1 package, and audited 2 packages in 3s
-            </p>
-            <p className="text-green-400">$</p>
-          </div>
-        </motion.div>
+      <HeaderSection companey="Encrypt Brain" title="Our Projects" />
 
-        <motion.div
-          initial={{ opacity: 0, y: -40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.8 }}
-          className=" bg-black text-white p-2 rounded-lg w-full max-w-lg font-mono"
-        >
-          <div className="flex justify-between items-center">
-            <div className="flex space-x-2 text-red-500">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
-            </div>
-            <p className="text-sm cursor-pointer">Link</p>
+      <div className="w-full grid grid-cols-1 ">
+        {/* Project Card */}
+        <div className="overflow-hidden rounded-xl shadow-md bg-white dark:bg-zinc-900 transition hover:shadow-xl">
+          <div className="relative h-56 w-full">
+            <Image
+              src="/image/EncryptBrain/Pretty/pretty logo.png"
+              alt="Pretty Project"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+              priority
+            />
           </div>
-          <div className="mt-4">
-            <p className="text-green-400">$ npm install Pretty</p>
-            <p className="text-white">+ Pretty</p>
-            <p className="text-white">
-              added 1 package, and audited 2 packages in 3s
-            </p>
-            <p className="text-green-400">$</p>
-          </div>
-        </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.8 }}
-          className=" bg-black text-white p-2 rounded-lg w-full max-w-lg font-mono"
-        >
-          <div className="flex justify-between items-center">
-            <div className="flex space-x-2 text-red-500">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          <div className="p-4 sm:p-6">
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                Pretty
+              </h3>
+              <Link href="/projects/pertty">
+                <Button className="cursor-pointer text-sm">Live Demo</Button>
+              </Link>
             </div>
-            <p className="text-sm cursor-pointer">Link</p>
-          </div>
-          <div className="mt-4">
-            <p className="text-green-400">$ npm install MhwarFlowers</p>
-            <p className="text-white">+ MhwarFlowers</p>
-            <p className="text-white">
-              added 1 package, and audited 2 packages in 3s
+            <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
+              Pretty is a web app to create & share beautiful presentations. It
+              provides customizable templates and interactive features for fast,
+              stunning results.
             </p>
-            <p className="text-green-400">$</p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );

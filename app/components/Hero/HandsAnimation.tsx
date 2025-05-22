@@ -42,7 +42,9 @@ export default function HandsAnimation() {
         className={`absolute left-1/2 transform -translate-x-full ${topPosition} -translate-y-1/2`}
       >
         <Image
-          src="/image/cyborg.png"
+          
+                    src="/image/EncryptBrain/Hands/ropot-hands.png"
+
           alt="Cyborg Hand"
           width={300}
           height={300}
@@ -63,7 +65,7 @@ export default function HandsAnimation() {
         className={`absolute left-1/2 transform ${topPosition} -translate-y-1/2`}
       >
         <Image
-          src="/image/technology-human.png"
+          src="/image/EncryptBrain/Hands/human-hand.png"
           alt="Human Hand"
           width={300}
           height={300}

@@ -3,6 +3,7 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 
 import { TabletSmartphone, Globe, PenTool, Bug, LifeBuoy } from "lucide-react";
+import Image from "next/image";
 
 interface Card {
   id: number;
@@ -46,6 +47,21 @@ const cardData: Card[] = [
     icon: LifeBuoy,
     description:
       "Rely on our experts to eliminate workflow inefficiencies, integrate cutting-edge technologies, and streamline your app portfolio",
+  },
+  {
+    id: 6,
+    title: "SEO",
+    icon: () => (
+      <Image
+        src="/image/EncryptBrain/Icons/9w.png"
+        alt="logo"
+        width={40}
+        height={40}
+        className="object-cover !text-cyan-400"
+      />
+    ),
+    description:
+      "Compete on Google and other common search engines and gain more traffic to your site.",
   },
 ];
 
@@ -93,7 +109,7 @@ const Cards: React.FC = () => {
           className="relative bg-gray-700 text-white rounded-xl p-4 cursor-pointer select-none"
         >
           <div className="flex flex-col items-center justify-center gap-1 lg:gap-2">
-            <Icon  className="text-cyan-400 w-6 h-6 lg:w-10 lg:h-10" />
+            <Icon className="text-cyan-400 w-6 h-6 lg:w-10 lg:h-10" />
             <h3 className="text-sm font-medium lg:font-semibold lg:text-lg text-center">
               {title}
             </h3>

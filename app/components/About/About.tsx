@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
-import { Atom, Brain, CreativeCommons, Maximize, Timer } from "lucide-react";
+import { Atom, Brain, CreativeCommons, Timer } from "lucide-react";
 import HeaderSection from "../HeaderSection";
+import Image from "next/image";
 
 const containerVariants = {
   hidden: {},
@@ -150,7 +151,14 @@ const About = () => {
         >
           <div className="p-3">
             <div className="flex items-center justify-center gap-2  ">
-              <Maximize className="6 h-6 md:w-10 md:h-10  " />
+              {/* <Maximize className="6 h-6 md:w-10 md:h-10  " /> */}
+              <Image
+                src="/image/EncryptBrain/Icons/4w.png"
+                alt="logo"
+                width={40}
+                height={40}
+                className="w-6 h-6 md:w-10 md:h-10  "
+              />
               <p className="text-sm md:text-lg dark:text-white text-black">
                 Cost
               </p>
@@ -186,7 +194,6 @@ const About = () => {
             </p>
           </div>{" "}
         </motion.div>
-
       </motion.div>
     </motion.div>
   );

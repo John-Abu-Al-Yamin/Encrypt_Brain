@@ -21,7 +21,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center py-4 px-4 h-20 container mx-auto">
         <motion.div
-          className="flex items-center gap-2 sm:gap-4"
+          className="flex items-center gap-6"
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
@@ -30,19 +30,24 @@ const Navbar = () => {
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className=""
+              className="flex items-center gap-2 cursor-pointer"
             >
               <Image
-                src="/image/hum-hands/Encrypt Brain Logo.svg"
+                src="/image/EncryptBrain/Logo/Encrypt Brain Logo icon.png"
+                alt="logo"
+                width={40}
+                height={40}
+                className=" object-cover "
+              />
+              <Image
+                src="/image/EncryptBrain/Logo/Encrypt Brain Logo title.png"
                 alt="logo"
                 width={100}
                 height={100}
-                className=" mt-4 text-center "
+                className=" object-cover "
               />
             </motion.div>
-            <span className="block dark:text-white text-black font-bold text-xl ">
-              Encrypt Brain 
-            </span>
+           
           </div>
 
           {/* Toggle button visible on all screens */}
