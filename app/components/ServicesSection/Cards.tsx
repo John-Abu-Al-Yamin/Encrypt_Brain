@@ -2,8 +2,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 
-import { TabletSmartphone, Globe, PenTool, Bug, LifeBuoy } from "lucide-react";
-import Image from "next/image";
+import { TabletSmartphone, Globe, PenTool, Bug, LifeBuoy, Chrome } from "lucide-react";
 
 interface Card {
   id: number;
@@ -51,15 +50,8 @@ const cardData: Card[] = [
   {
     id: 6,
     title: "SEO",
-    icon: () => (
-      <Image
-        src="/image/EncryptBrain/Icons/9w.png"
-        alt="logo"
-        width={40}
-        height={40}
-        className="object-cover !text-cyan-400"
-      />
-    ),
+    icon:Chrome 
+,
     description:
       "Compete on Google and other common search engines and gain more traffic to your site.",
   },
