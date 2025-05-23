@@ -53,7 +53,7 @@ const OurProjects = () => {
               </h3>
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="cursor-pointer text-sm px-4 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                  <Button className="w-full lg:w-auto cursor-pointer text-xs lg:text-md px-4 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2">
                     Visit Pretty
                   </Button>
                 </DialogTrigger>
@@ -107,7 +107,7 @@ const OurProjects = () => {
               </h3>
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="cursor-pointer text-sm px-4 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                  <Button className="w-full lg:w-auto cursor-pointer text-xs lg:text-md px-4 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 ">
                     Visit MhwerFlowers
                   </Button>
                 </DialogTrigger>
