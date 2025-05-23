@@ -113,17 +113,17 @@ const OurProjects = () => {
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
-                    <DialogTitle>MhwerFlowers </DialogTitle>
+                    <DialogTitle>MhwerFlowers</DialogTitle>
                     <DialogDescription>
-                      MhwerFlowers – Send Love, Send Flowers Across Saudi Arabia
-                      Looking to brighten someone’s day or mark a special
-                      occasion? MhwerFlowers is your trusted flower delivery
-                      service across Saudi Arabia. From romantic roses to
-                      elegant bouquets and thoughtful arrangements, we make it
-                      easy to order and send fresh flowers with just a few
-                      clicks. Whether you're in Riyadh, Jeddah, Dammam, or
+                      MhwerFlowers – Send Love, Send Flowers Across Saudi
+                      Arabia. Looking to brighten someone&apos;s day or mark a
+                      special occasion? MhwerFlowers is your trusted flower
+                      delivery service across Saudi Arabia. From romantic roses
+                      to elegant bouquets and thoughtful arrangements, we make
+                      it easy to order and send fresh flowers with just a few
+                      clicks. Whether you&apos;re in Riyadh, Jeddah, Dammam, or
                       anywhere in the Kingdom, we deliver beauty to every
-                      doorstep—quickly, reliably, and with love.{" "}
+                      doorstep—quickly, reliably, and with love.
                     </DialogDescription>
                   </DialogHeader>
                   <div className="grid gap-4 py-4">
@@ -139,14 +139,14 @@ const OurProjects = () => {
               </Dialog>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-5">
-              MhwerFlowers – Send Love, Send Flowers Across Saudi Arabia Looking
-              to brighten someone’s day or mark a special occasion? MhwerFlowers
-              is your trusted flower delivery service across Saudi Arabia. From
-              romantic roses to elegant bouquets and thoughtful arrangements, we
-              make it easy to order and send fresh flowers with just a few
-              clicks. Whether you're in Riyadh, Jeddah, Dammam, or anywhere in
-              the Kingdom, we deliver beauty to every doorstep—quickly,
-              reliably, and with love.{" "}
+              MhwerFlowers – Send Love, Send Flowers Across Saudi Arabia.
+              Looking to brighten someone&apos;s day or mark a special occasion?
+              MhwerFlowers is your trusted flower delivery service across Saudi
+              Arabia. From romantic roses to elegant bouquets and thoughtful
+              arrangements, we make it easy to order and send fresh flowers with
+              just a few clicks. Whether you&apos;re in Riyadh, Jeddah, Dammam,
+              or anywhere in the Kingdom, we deliver beauty to every
+              doorstep—quickly, reliably, and with love.
             </p>
           </div>
         </motion.div>
