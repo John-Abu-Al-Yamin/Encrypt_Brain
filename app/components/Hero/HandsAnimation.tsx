@@ -16,10 +16,10 @@ export default function HandsAnimation() {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const leftInitial = isMobile ? -100 : -500;
+  const leftInitial = isMobile ? -100 : -300;
   const leftTarget = isMobile ? -10 : -320;
 
-  const rightInitial = isMobile ? 100 : 500;
+  const rightInitial = isMobile ? 100 : 300;
   const rightTarget = isMobile ? 10 : 360;
 
   const topPosition = isMobile ? "top-1/4" : "top-1/3"; // رفع للأيدين فوق شوية
