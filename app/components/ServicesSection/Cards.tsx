@@ -98,11 +98,11 @@ const Cards: React.FC = () => {
           whileHover="hover"
           whileTap="hover" 
           viewport={{ once: false, amount: 0.4 }}
-          className="relative bg-gray-700 text-white rounded-xl p-4 cursor-pointer select-none"
+          className="relative bg-black/70  text-white rounded-xl p-4 cursor-pointer select-none"
         >
           <div className="flex flex-col items-center justify-center gap-1 lg:gap-2">
             <Icon className="text-cyan-400 w-6 h-6 lg:w-10 lg:h-10" />
-            <h3 className="text-sm font-medium lg:font-semibold lg:text-lg text-center">
+            <h3 className="text-sm font-medium lg:font-semibold lg:text-lg text-center !font-sans">
               {title}
             </h3>
           </div>
@@ -110,7 +110,7 @@ const Cards: React.FC = () => {
             <p className="text-sm text-zinc-400 leading-relaxed">
               {description}
             </p>
-            <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-gray-700"></div>
+            {/* <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-gray-700"></div> */}
           </div>
         </motion.div>
       ))}

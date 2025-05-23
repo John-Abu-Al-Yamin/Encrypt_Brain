@@ -22,7 +22,7 @@ const NavSticky = () => {
     },
 
     {
-      href: "https://api.MessageCircle .com/send?phone=201044950655",
+href: "https://wa.me/201097706996",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"

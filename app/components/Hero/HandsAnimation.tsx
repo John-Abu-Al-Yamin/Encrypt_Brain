@@ -17,10 +17,10 @@ export default function HandsAnimation() {
   }, []);
 
   const leftInitial = isMobile ? -100 : -500;
-  const leftTarget = isMobile ? -10 : -280;
+  const leftTarget = isMobile ? -10 : -320;
 
   const rightInitial = isMobile ? 100 : 500;
-  const rightTarget = isMobile ? 10 : 280;
+  const rightTarget = isMobile ? 10 : 360;
 
   const topPosition = isMobile ? "top-1/4" : "top-1/3"; // رفع للأيدين فوق شوية
 
@@ -39,12 +39,10 @@ export default function HandsAnimation() {
           delay: 0.2,
           ease: "easeInOut",
         }}
-        className={`absolute left-1/2 transform -translate-x-full ${topPosition} -translate-y-1/2`}
+        className={`absolute left-1/2 transform -translate-x-full ${topPosition} lg:top-1/2 -translate-y-1/2`}
       >
         <Image
-          
-                    src="/image/EncryptBrain/Hands/ropot-hands.png"
-
+          src="/image/EncryptBrain/Hands/ropot-hands.png"
           alt="Cyborg Hand"
           width={300}
           height={300}
@@ -62,7 +60,7 @@ export default function HandsAnimation() {
           delay: 0.2,
           ease: "easeInOut",
         }}
-        className={`absolute left-1/2 transform ${topPosition} -translate-y-1/2`}
+        className={`absolute ${topPosition} lg:top-1/2 left-1/2 transform  -translate-y-1/2`}
       >
         <Image
           src="/image/EncryptBrain/Hands/human-hand.png"

@@ -2,7 +2,14 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Linkedin, Mail, Phone, Globe, LocateIcon } from "lucide-react";
+import {
+  Linkedin,
+  Mail,
+  Phone,
+  
+  LocateIcon,
+  EclipseIcon,
+} from "lucide-react";
 
 const container = {
   hidden: { opacity: 0 },
@@ -160,13 +167,10 @@ export default function Footer() {
                 variants={item}
                 className="flex items-center space-x-3"
               >
-                <Globe size={18} className="text-gray-400" />
-                <a
-                  href="https://encryptbrain.com"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  https://encryptbrain.com{" "}
-                </a>
+                <EclipseIcon size={18} className="text-gray-400" />
+                <p className="text-gray-400 hover:text-white transition-colors">
+                  Commercial registration number: ( 10530 08002 54832 )
+                </p>
               </motion.div>
             </motion.div>
 
@@ -182,10 +186,12 @@ export default function Footer() {
               >
                 <LocateIcon size={18} className="text-gray-400" />
                 <a
-                  href="https://encryptbrain.com"
+                  href="https://maps.app.goo.gl/DXrKaA1sXJcwQPfs9"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Compound 118 – 1st Floor–Apt 4 – Obour City–Egypt
+                  Compound 118 – 1st Floor – Apt 4 – Obour City – Egypt
                 </a>
               </motion.div>
             </motion.div>

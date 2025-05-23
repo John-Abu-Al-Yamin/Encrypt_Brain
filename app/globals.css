@@ -219,6 +219,20 @@ textarea,
   color: black !important;
 }
 
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

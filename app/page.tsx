@@ -1,7 +1,7 @@
 import About from "./components/About/About";
 import Navbar from "./components/Header/Navbar";
 import Hero from "./components/Hero/Hero";
-import OurTeam from "./components/OurTeam/OurTeam";
+// import OurTeam from "./components/OurTeam/OurTeam";
 import ParallaxSection from "./components/ParallaxSection/ParallaxSection";
 import SectionVideo from "./components/SectionVideo/SectionVideo";
 import OurProjects from "./components/Projects/OurProjects";
@@ -30,9 +30,9 @@ export default function Home() {
       <section className=" h-dvh snap-start">
         <OurPartners />
       </section>
-      <section className=" h-dvh snap-start">
+      {/* <section className=" h-dvh snap-start">
         <OurTeam />
-      </section>
+      </section> */}
       <section className=" h-dvh snap-start">
         <ParallaxSection />
         <Footer />

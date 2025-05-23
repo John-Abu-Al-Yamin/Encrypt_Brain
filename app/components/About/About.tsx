@@ -66,7 +66,7 @@ const About = () => {
         viewport={{ once: false }}
       >
         <motion.div
-          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border border-[1.5px] border-black dark:border-white bg-transparent  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover="hover"
@@ -91,7 +91,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border border-[1.5px] border-black dark:border-white bg-transparent  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover="hover"
@@ -115,7 +115,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border border-[1.5px] border-black dark:border-white bg-transparent  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover="hover"
@@ -139,7 +139,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border border-[1.5px] border-black dark:border-white bg-transparent  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover="hover"
@@ -164,7 +164,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border dark:border-white bg-gray-100  shadow-md   text-lg font-semibold"
+          className="h-32 rounded-xl dark:bg-black dark:text-white dark:shadow-md dark:border border-[1.5px] border-black dark:border-white bg-transparent  shadow-md   text-lg font-semibold"
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover="hover"
